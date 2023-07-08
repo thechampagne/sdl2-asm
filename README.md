@@ -8,6 +8,7 @@ Supported OSs:
 
 Supported Assemblers:
  - FASM
+ - NASM
 
 ### Screenshot
 
