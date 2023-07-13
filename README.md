@@ -2,6 +2,7 @@
 
 Supported Architectures:
  - x86_64
+ - x86_32
 
 Supported OSs:
  - linux
