@@ -1,15 +1,10 @@
 # SDL2 Examples In Assembly Language
 
-Supported Architectures:
- - x86_64
- - x86_32
-
-Supported OSs:
- - linux
-
-Supported Assemblers:
- - FASM
- - NASM
+Supported Platforms:
+ - fasm-linux-x86_64
+ - fasm-linux-x86_32
+ - nasm-linux-x86_64
+ - nasm-linux-x86_32
 
 ### Screenshot
 
