@@ -16,6 +16,13 @@ nasm-x86_32:
 	ld nasm-x86_32-linux.o -o nasm-x86_32-linux.out -dynamic-linker /lib/ld-linux.so.* -lc -lSDL2
 
 
+.PHONY: fasm-x86_32
+fasm-x86_32:
+	fasm x86_32/linux/fasm/main.asm fasm-x86_32-linux.o
+	ld fasm-x86_32-linux.o -o fasm-x86_32-linux.out -dynamic-linker /lib/ld-linux.so.* -lc -lSDL2
+
+
+
 .PHONY: clean
 clean:
 	rm -f *.o *.out
