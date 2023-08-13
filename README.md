@@ -5,6 +5,7 @@ Supported Platforms:
  - fasm-linux-x86_32
  - nasm-linux-x86_64
  - nasm-linux-x86_32
+ - gas-linux-x86_64
 
 ### Screenshot
 
