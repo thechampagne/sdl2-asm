@@ -27,6 +27,11 @@ gas-x86_64:
 	as --64 x86_64/linux/gas/main.asm -o gas-x86_64-linux.o
 	ld gas-x86_64-linux.o -o gas-x86_64-linux.out -dynamic-linker /lib64/ld-linux-x86-64.so.* -lc -lSDL2
 
+.PHONY: gas-x86_32
+gas-x86_32:
+	as --32 x86_32/linux/gas/main.asm -o gas-x86_32-linux.o
+	ld gas-x86_32-linux.o -o gas-x86_32-linux.out -dynamic-linker /lib/ld-linux.so.* -lc -lSDL2
+
 
 
 .PHONY: clean
