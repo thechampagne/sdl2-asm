@@ -1,5 +1,5 @@
 section .text
-global Start
+global start
 
 extern ExitProcess
 extern printf
@@ -20,7 +20,7 @@ extern SDL_DestroyWindow
 extern SDL_Quit
 extern SDL_GetError
 
-Start:
+start:
 	sub rsp, 56
 	mov rcx, 62001
 	call SDL_Init
