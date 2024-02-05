@@ -135,7 +135,7 @@ create_tfs_err:
 	mov rdi, 8
 exit:
 	add rsp, 8
-	mov rax, 60
+	mov rax, 1
 	syscall
 
 
