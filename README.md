@@ -1,12 +1,15 @@
 # SDL2 Examples In Assembly Language
 
 Supported Platforms:
- - fasm-linux-x86_64
- - fasm-linux-x86_32
- - nasm-linux-x86_64
- - nasm-linux-x86_32
- - gas-linux-x86_64
- - gas-linux-x86_32
+ - fasm-x86_64-linux
+ - fasm-x86_32-linux
+ - nasm-x86_64-linux
+ - nasm-x86_32-linux
+ - gas-x86_64-linux
+ - gas-x86_32-linux
+ - nasm-x86_64-freebsd
+ - nasm-x86_64-windows
+ - nasm-x86_64-macos
 
 ### Screenshot
 
