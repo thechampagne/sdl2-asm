@@ -37,6 +37,11 @@ nasm-x86_64-freebsd:
 	nasm -felf64 x86_64/freebsd/nasm/main.asm -o nasm-x86_64-freebsd.o
 	ld nasm-x86_64-freebsd.o -o nasm-x86_64-freebsd.out -dynamic-linker /libexec/ld-elf.so.* -L/usr/lib -L/usr/local/lib -lc -lSDL2
 
+.PHONY: fasm-x86_64-freebsd
+fasm-x86_64-freebsd:
+	fasm x86_64/freebsd/fasm/main.asm fasm-x86_64-freebsd.o
+	ld fasm-x86_64-freebsd.o -o fasm-x86_64-freebsd.out -dynamic-linker /libexec/ld-elf.so.* -L/usr/lib -L/usr/local/lib -lc -lSDL2
+
 
 .PHONY: clean
 clean:
