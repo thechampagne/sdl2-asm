@@ -7,6 +7,7 @@ Supported Platforms:
  - nasm-x86_32-linux
  - gas-x86_64-linux
  - gas-x86_32-linux
+ - fasm-x86_64-freebsd
  - nasm-x86_64-freebsd
  - nasm-x86_64-windows
  - nasm-x86_64-macos
