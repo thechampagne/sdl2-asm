@@ -52,6 +52,24 @@ gas-x86_64-freebsd:
 	ld gas-x86_64-freebsd.o -o gas-x86_64-freebsd.out -dynamic-linker /libexec/ld-elf.so.* -L/usr/lib -L/usr/local/lib -lc -lSDL2
 
 
+.PHONY: nasm-x86_32-freebsd
+nasm-x86_32-freebsd:
+	nasm -felf32 x86_32/freebsd/nasm/main.asm -o nasm-x86_32-freebsd.o
+	ld nasm-x86_32-freebsd.o -o nasm-x86_32-freebsd.out -dynamic-linker /libexec/ld-elf.so.* -L/usr/lib -L/usr/local/lib -lc -lSDL2
+
+
+.PHONY: fasm-x86_32-freebsd
+fasm-x86_32-freebsd:
+	fasm x86_32/freebsd/fasm/main.asm fasm-x86_32-freebsd.o
+	ld fasm-x86_32-freebsd.o -o fasm-x86_32-freebsd.out -dynamic-linker /libexec/ld-elf.so.* -L/usr/lib -L/usr/local/lib -lc -lSDL2
+
+
+.PHONY: gas-x86_32-freebsd
+gas-x86_32-freebsd:
+	as --32 x86_32/freebsd/gas/main.asm -o gas-x86_32-freebsd.o
+	ld gas-x86_32-freebsd.o -o gas-x86_32-freebsd.out -dynamic-linker /libexec/ld-elf.so.* -L/usr/lib -L/usr/local/lib -lc -lSDL2
+
+
 .PHONY: clean
 clean:
 	rm -f *.o *.out

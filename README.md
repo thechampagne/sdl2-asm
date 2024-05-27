@@ -10,6 +10,9 @@ Supported Platforms:
  - fasm-x86_64-freebsd
  - nasm-x86_64-freebsd
  - gas-x86_64-freebsd
+ - fasm-x86_32-freebsd
+ - nasm-x86_32-freebsd
+ - gas-x86_32-freebsd
  - nasm-x86_64-windows
  - nasm-x86_64-macos
 
